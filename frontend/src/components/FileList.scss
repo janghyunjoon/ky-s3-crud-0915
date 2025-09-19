@@ -1,0 +1,49 @@
+.file-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin: 1.8rem 0 2.4rem;
+
+    >li {
+        border-radius: 1.2rem;
+        flex: 1 1 260px;
+        // max-width: 26rem;
+        border: .1rem solid var(--border);
+        padding: 2rem;
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        box-shadow: 0 6px 16px rgba(17, 24, 39, .06);
+        transition: transform .12s ease, box-shadow .12s ease;
+        cursor: pointer;
+
+        .img-wrap {
+            img {
+                max-width: 100%
+            }
+        }
+        h3 {
+            font-size: 2.4rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+        .btn-wrap {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            >*{
+                display: inline-block;
+                color: var(--bg);
+                padding: 1rem 2rem;
+                border: none;
+                border-radius: .5rem;
+                background-color: var(--open);
+            }
+            .delete-btn{
+                background-color: var(--delete);
+            }
+        }
+    }
+}

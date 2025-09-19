@@ -29,5 +29,5 @@ export const presignGet =(Key,sec=300)=>
         {expiresIn:sec}
     )
 
-export const deleteObject =()=>
+export const deleteObject =(key)=>
     s3.send(new DeleteObjectCommand({Bucket,Key}))
